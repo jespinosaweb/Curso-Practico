@@ -46,7 +46,7 @@ areaCirculo();
 
 function calPerCuadrado() {
     const input = document.getElementById("inputCuadrado");
-    const value = input.value;
+    const value = Number(input.value);
     const perimetro = perimetroCuadrado(value);
     alert("El perimetro es " + perimetro);
 }

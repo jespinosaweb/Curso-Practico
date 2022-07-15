@@ -1,10 +1,16 @@
+header {
+    margin: 15px;
+}
+
 section {
     border: 3px solid black;
     padding: 10px;
     background: burlywood;
     margin: 10px;
+    margin-right: 800px;
 }
 
 body {
     background: cadetblue;
+    font-family: sans-serif;
 }
