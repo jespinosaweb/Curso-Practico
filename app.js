@@ -105,12 +105,16 @@ function comprobarTriangulo() {
     const value1 = Number(input1.value);
     const value2 = Number(input2.value);
     const value3 = Number(input3.value);
-    if (value1 == value2 && value1 != value3 && value2 != value3) {
+    if (value1 == value2 && value2 == value3 && value3 == value1) {
+        alert("El triangulo es Equilatero");
+    } else if (value1 == value2 && value1 != value3 && value2 != value3) {
         alert("El Triangulo es Isosceles");
-    } else if (value1 == value2 && value2 == value3 && value3 == value1) {
-        alert("El triangulo es isosceles y ademas es equilatero");
+    } else if (value1 == value3 && value1 != value2 && value3 != value2) {
+        alert("El Triangulo es Isosceles");
+    } else if (value2 == value3 && value2 != value1 && value3 != value1) {
+        alert("El Triangulo es Isosceles");
     } else {
-        alert("El triangulo es incorrecto(no es isosceles)");
+        alert("El Triangulo es Escaleno");
     }
 }
 
