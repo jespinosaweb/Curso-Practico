@@ -80,7 +80,7 @@ function calAreTriangulo() {
     alert(area);
 }
 
-// Enlace con thml Circulo
+// Enlace con html Circulo
 
 function calPerCirculo() {
     const input = document.getElementById("inputCirculo");
@@ -89,9 +89,30 @@ function calPerCirculo() {
     alert(perimetro)
 }
 
-function calAreCirculo () {
+function calAreCirculo() {
     const input = document.getElementById("inputCirculo");
     const value = Number(input.value);
     const area = areaCirculo(value);
     alert(area);
 }
+
+// Comprar si el triangulo es isosceles
+
+function comprobarTriangulo() {
+    const input1 = document.getElementById("inputIsosceles1");
+    const input2 = document.getElementById("inputIsosceles2");
+    const input3 = document.getElementById("inputIsosceles3");
+    const value1 = Number(input1.value);
+    const value2 = Number(input2.value);
+    const value3 = Number(input3.value);
+    if (value1 == value2 && value1 != value3 && value2 != value3) {
+        alert("El Triangulo es Isosceles");
+    } else if (value1 == value2 && value2 == value3 && value3 == value1) {
+        alert("El triangulo es isosceles y ademas es equilatero");
+    } else {
+        alert("El triangulo es incorrecto(no es isosceles)");
+    }
+}
+
+
+// 
