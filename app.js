@@ -48,14 +48,16 @@ function calPerCuadrado() {
     const input = document.getElementById("inputCuadrado");
     const value = Number(input.value);
     const perimetro = perimetroCuadrado(value);
-    alert("El perimetro es " + perimetro);
+    document.getElementById("pCuadrado").innerHTML = "El Perimetro es " + perimetro + "CM";
+    /* alert("El perimetro es " + perimetro); */
 }
 
 function calAreCuadrado() {
     const input = document.getElementById("inputCuadrado");
     const value = input.value;
     const area = areaCuadrado(value);
-    alert(" El area es " + area);
+    document.getElementById("pCuadrado").innerHTML = "El Area es " + area + "CM2";
+    /* alert(" El area es " + area); */
 }
 
 // Enlace con html triangulo
@@ -68,7 +70,8 @@ function calPerTriangulo() {
     const value2 = Number(input2.value);
     const value3 = Number(input3.value);
     const perimetro = perimetroTriangulo(value1, value2, value3);
-    alert(perimetro);
+    document.getElementById("pTriangulo").innerHTML = "El Perimetro es " + perimetro + "CM";
+    /* alert(perimetro); */
 }
 
 function calAreTriangulo() {
@@ -77,7 +80,8 @@ function calAreTriangulo() {
     const value1 = Number(input1.value);
     const value2 = Number(input2.value);
     const area = areaTriangulo(value1, value2);
-    alert(area);
+    document.getElementById("pTriangulo").innerHTML = "El Area es " + area + "CM2";
+    /* alert(area); */
 }
 
 // Enlace con html Circulo
@@ -86,14 +90,16 @@ function calPerCirculo() {
     const input = document.getElementById("inputCirculo");
     const value = Number(input.value);
     const perimetro = circunferencia(value);
-    alert(perimetro)
+    document.getElementById("pCirculo").innerHTML = "El Perimetro es " + perimetro + "CM";
+    /* alert(perimetro) */
 }
 
 function calAreCirculo() {
     const input = document.getElementById("inputCirculo");
     const value = Number(input.value);
     const area = areaCirculo(value);
-    alert(area);
+    document.getElementById("pCirculo").innerHTML = "El Area es " + area + "CM2";
+    /* alert(area); */
 }
 
 // Comprar si el triangulo es isosceles
@@ -106,15 +112,20 @@ function comprobarTriangulo() {
     const value2 = Number(input2.value);
     const value3 = Number(input3.value);
     if (value1 == value2 && value2 == value3 && value3 == value1) {
-        alert("El triangulo es Equilatero");
+        document.getElementById("pCirculo2").innerHTML = "El triangulo es Equilatero";
+        /* alert("El triangulo es Equilatero"); */
     } else if (value1 == value2 && value1 != value3 && value2 != value3) {
-        alert("El Triangulo es Isosceles");
+        document.getElementById("pCirculo2").innerHTML = "El triangulo es Isosceles";
+        /* alert("El Triangulo es Isosceles"); */
     } else if (value1 == value3 && value1 != value2 && value3 != value2) {
-        alert("El Triangulo es Isosceles");
+        document.getElementById("pCirculo2").innerHTML = "El triangulo es Isosceles";
+        /* alert("El Triangulo es Isosceles"); */
     } else if (value2 == value3 && value2 != value1 && value3 != value1) {
-        alert("El Triangulo es Isosceles");
+        document.getElementById("pCirculo2").innerHTML = "El triangulo es Isosceles";
+        /* alert("El Triangulo es Isosceles"); */
     } else {
-        alert("El Triangulo es Escaleno");
+        document.getElementById("pCirculo2").innerHTML = "El triangulo es Escaleno";
+        /* alert("El Triangulo es Escaleno"); */
     }
 }
 
